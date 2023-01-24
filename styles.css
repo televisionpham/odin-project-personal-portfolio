@@ -1,0 +1,40 @@
+:root {
+    --grey: #565656;
+    --blue: #0891B2;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;    
+}
+
+h1,h3,h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+.description {
+    color: var(--grey);
+}
+
+#profileName {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;    
+}
+
+.social-links {
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#contactSection {
+    background-color: var(--blue);
+    color: white;
+}
+
+.img-fluid,.card-img-top {
+    max-width: 100%;
+}
