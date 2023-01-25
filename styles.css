@@ -3,13 +3,22 @@
     --blue: #0891B2;
 }
 
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;    
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1,h3,h5 {
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+}
+
+h1,h3,h4,h5 {
     font-family: 'Playfair Display', serif;
+}
+
+img {
+    object-fit: cover;
 }
 
 .description {
@@ -18,7 +27,8 @@ h1,h3,h5 {
 
 #profileName {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;    
+    font-size: 2.5rem;    
+    color: white;
 }
 
 .social-links {
@@ -28,6 +38,7 @@ h1,h3,h5 {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin: 1rem 0;
 }
 
 #contactSection {
@@ -37,4 +48,53 @@ h1,h3,h5 {
 
 .img-fluid,.card-img-top {
     max-width: 100%;
+}
+
+.project-links {
+    display: inline;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 3rem;
+}
+
+.card-body {
+    padding: 0.5rem;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 0.5rem
+    }
+    #profilePicture {
+        position: relative;
+    }
+    #profileName {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+    h1 {
+        text-align: center;
+        margin: 0.5rem;
+    }
+    #myWorkSection {
+        margin-top: 3rem;
+    }
 }
